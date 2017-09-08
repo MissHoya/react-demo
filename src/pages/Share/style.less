@@ -1,0 +1,157 @@
+*{margin: 0;padding: 0;box-sizing: border-box;}
+.container{
+  height: 100vh;
+  overflow: hidden;
+  background: #ff6047 url(../../assets/daka_share_base_bg.png) no-repeat center top/100% auto;
+}
+.centering{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+header{
+  color: #fff;
+  font-size: 2.11vh;
+  text-align: center;
+  overflow: hidden;
+  .header{
+    &-title{
+      margin: 2.64vh auto 2.28vh;
+    }
+    &-name{
+      line-height: 2;
+    }
+    &-desc{
+      font-size: 2.28vh;
+      letter-spacing: 0.7vh;
+      line-height: 1.42;
+    }
+    &-day{
+      margin: 0 auto;
+      background: #fff;
+      color: #FF6047;
+      font-weight: bold;
+      letter-spacing: 0.07vh;
+      line-height: 1.375;
+      display: inline-block;
+      padding: 0.35vh 1.49vh;
+      border-radius: ~"10%/50%";
+    }
+  }
+}
+
+section{
+  background-color: #fff;
+  border-radius: 1.56vw;
+  width: 92.3vw;
+  margin: 0 auto;
+  overflow: hidden;
+  &.main{
+    height: 61.53vh;
+    margin-top: 2.5vh;
+    .video{
+      height: 47.92%;
+      background-color: #FDD7D5;
+      position: relative;
+      border-radius: 1.56vw 1.56vw 0 0;
+      video{
+        width: 100%;
+        height: 100%;
+        border-radius: 1.56vw;
+      }
+      &-screen{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        text-align: center;
+        z-index: 1;
+      }
+    }
+    .play{
+      &-icon{
+        height: 9.33vh;
+        width: 9.33vh;
+        background-color: #fff;
+        border-radius: 100%;
+        box-shadow: 0 0 0 .88vh rgba(255, 255, 255, .5);
+        position: relative;
+      }
+      &-triangle{
+        width: 36.63%;
+        height: 36.63%;
+        position: absolute;
+        top: 50%;
+        left: 36.63%;
+        transform: translate(0, -50%);
+      }
+    }
+  }
+}
+
+.desc{
+  height: 52.07%;
+  font-size: 2.11vh;
+  color: #5D6676;
+  padding: 3.38vh 5.7% 0;
+  &-content{
+    line-height: 1.67;
+    border-bottom: 1px dashed #FFC0B6;
+    padding-bottom: 1.49vh;
+  }
+  .new-word{
+    padding-top: 1.58vh;
+    &-title{
+      line-height: 1.67;
+    }
+    &-group{
+      margin-top: 1.3vh;
+      max-height: 13.85vh;
+      overflow: auto;
+      li{
+        display: inline-block;
+        font-size: 2.6vh;
+        line-height: 1.4;
+        background-color: #F3F5F8;
+        padding: 0.92vh 2.5vh 0.8vh;
+        border-radius: ~'22%/50%';
+        letter-spacing: 0.08vh;
+        margin: 0.8vh 0.5vh;
+        span{
+          color: #FA404D;
+        }
+      }
+    }
+  }
+}
+
+.footer{
+  height: 15.93vh;
+  padding: 1.4vh 1.4vh 0 1.4vh;
+  font-size: 0;
+  margin-top: 1.14vh;
+  display: flex;
+  justify-content: space-between;
+  &-content{
+    display: flex;
+    font-size: 1.93vh;
+    height: 13.2vh;
+    align-items: center;
+  }
+  &-qr-code{
+    width: 13.2vh;
+    height: 13.2vh;
+    padding: 0.44vh;
+    border: 1px solid #D2D2D2;
+    box-shadow: 0 0.02rem 0.22rem rgba(0,0,0,.08);
+    border-radius: 0.78vw;
+    text-align: center;
+    line-height: 1;
+    font-size: 0;
+  }
+}
+
+.hide{
+  display: none;
+}
